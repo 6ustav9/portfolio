@@ -1,0 +1,98 @@
+#presentation {
+    background: var(--university-of-california-gold);
+    justify-content: center;
+    padding: 4% 0;
+}
+
+.presentation__description {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    margin: 0 20px;
+    width: 50%;
+}
+
+.presentation__description p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    word-spacing: 12px;
+    letter-spacing: .05rem;
+    line-height: 1.38rem;
+    margin: 8px 0;
+}
+
+.presentation__external-links {
+    color: var(--yellow-sun);
+    transition: all 1s ease-in-out;
+}
+
+.presentation__external-links:hover {
+    color: var(--yellow-orange);
+    transition: all 1s ease-in-out;
+}
+
+.presentation__profile-images {
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.presentation__profile-images__img-1 img {
+    width: 150px;
+    padding: .2rem;
+    position: relative;
+    left: -2px;
+    z-index: -1;
+}
+
+.presentation__profile-images__img-1__screen {
+    border: .32rem var(--spanish-gray) solid;
+    border-radius: 5rem;
+    width: 135px;
+    height: 135px;
+    margin-bottom: 70px;
+    z-index: 0;
+}
+
+.presentation__profile-images__img-1--cut {
+    -webkit-mask-image: radial-gradient(circle, black 54%, rgba(0, 0, 0, 0) 5%);
+    mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0) 5%);
+    -webkit-mask-position: center -30px;
+    mask-position: 50px center;
+    position: relative;
+    top: -7px;
+}
+
+.presentation__profile-images__img-2 img {
+    width: 100px;
+    flex-flow: row;
+    border: .3rem var(--spanish-gray) solid;
+}
+
+.presentation__profile-images__img-3 img {
+    width: 108px;
+    flex-flow: row;
+    background: var(--bluebonnet);
+    border: .3rem var(--spanish-gray) solid;
+}
+
+.presentation__profile-images div img:only-child {
+    border-radius: 3.5rem;
+}
+
+.presentation__profile-images__img-1 {
+    position: relative;
+    left: 20%;
+    top: -2%;
+}
+
+.presentation__profile-images__img-2 {
+    position: relative;
+    left: -15%;
+    top: -13%
+}
+
+.presentation__profile-images__img-3 {
+    position: relative;
+    left: 65%;
+    top: -23%;
+}
