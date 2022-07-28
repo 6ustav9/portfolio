@@ -2,7 +2,6 @@
     flex-flow: column;
     align-items: center;
     padding: 5%;
-    background: var(--yellow-orange);
 }
 
 .skills__knowledge-container {
