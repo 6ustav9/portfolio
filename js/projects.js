@@ -43,7 +43,7 @@ for (let idxListProjects = 0; idxListProjects < listProjects.length; idxListProj
     linkSiteElement.setAttribute("href", listProjects[idxListProjects].link);
     linkSiteElement.setAttribute("target", "_blank");
     // link Github Project
-    linkGithubProjectElement.setAttribute("href", listProjects[idxListProjects].link);
+    linkGithubProjectElement.setAttribute("href", listProjects[idxListProjects].githubProject);
     linkGithubProjectElement.setAttribute("target", "_blank");
 
 
