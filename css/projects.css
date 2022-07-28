@@ -45,13 +45,24 @@
     -webkit-transform-origin: 0 0;
 }
 
-.projects__container__image__item__link {
+.projects__container__image__item__link-site {
     text-decoration: none;
 }
 
-.projects__container__image__item__link__title {
+.projects__container__image__item__link-site__title {
     text-align: center;
     margin-top: 10px;
     color: #000000;
     font-size: 2.2rem;
+}
+
+.projects__container__image__item__link-github-project {
+    text-decoration: none;
+}
+
+.projects__container__image__item__link-github-project__title {
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 1.5rem;
 }
