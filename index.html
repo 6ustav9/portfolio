@@ -3,8 +3,8 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio - Gustavo Guedes, conheça meus projetos. aqui voce encontra screenshot dos meus modelos 3d, gifs das animações e projetos de estudo.">
         <link rel="icon" type="image/png" href="./images/icons/cool-boy.png">
         <title>Gustavo Guedes</title>
         <link rel="stylesheet" href="./css/reset.css" />
@@ -23,112 +23,116 @@
     </head>
 
     <body>
-        <!-- Menu fixo de ancoragem -->
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__list__item">
-                    <a href="#presentation" class="menu__list__item__link active">Apresentação</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="#skills" class="menu__list__item__link">Habilidades & Certificações</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="#animations" class="menu__list__item__link">Animações</a>
-                </li>
-                <!-- <li class="menu__list__item">
-                    <a href="#games" class="menu__list__item__link">Games</a>
-                </li> -->
-                <li class="menu__list__item">
-                    <a href="#projects" class="menu__list__item__link">Projetos</a>
-                </li>
-                <li class="menu__list__item">
-                    <a href="#screenshots" class="menu__list__item__link">Screenshots</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="container" id="presentation">
-            <div class="presentation__description">
-                <h1>Apresentação</h1>
-                <p>
-                    Olá sou o Gustavo e trabalho como Programador na <a href="https://www.brq.com" target="_blank" class="presentation__external-links">BRQ</a>.
-                </p>
-                <p>
-                    conheca um pouco mais sobre minhas habilidades e projetos de estudo...
-                </p>
-            </div>
-            <div class="presentation__profile-images">
-                <div class="presentation__profile-images__img-1 presentation__profile-images__img-1__screen">
-                    <div class="presentation__profile-images__img-1--cut">
-                        <img src="./images/me.jpg" alt="Gustavo Guedes">
+        <header>
+            <!-- Menu fixo de ancoragem -->
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list__item">
+                        <a href="#presentation" class="menu__list__item__link active">Apresentação</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#skills" class="menu__list__item__link">Habilidades & Certificações</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#animations" class="menu__list__item__link">Animações</a>
+                    </li>
+                    <!-- <li class="menu__list__item">
+                        <a href="#games" class="menu__list__item__link">Games</a>
+                    </li> -->
+                    <li class="menu__list__item">
+                        <a href="#projects" class="menu__list__item__link">Projetos</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#screenshots" class="menu__list__item__link">Screenshots</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>        
+            <div class="container" id="presentation">
+                <div class="presentation__description">
+                    <h1>Apresentação</h1>
+                    <p>
+                        Olá sou o Gustavo e trabalho como Programador na <a href="https://www.brq.com" target="_blank" class="presentation__external-links">BRQ</a>.
+                    </p>
+                    <p>
+                        conheca um pouco mais sobre minhas habilidades e projetos de estudo...
+                    </p>
+                </div>
+                <div class="presentation__profile-images">
+                    <div class="presentation__profile-images__img-1 presentation__profile-images__img-1__screen">
+                        <div class="presentation__profile-images__img-1--cut">
+                            <img src="./images/me.jpg" alt="Gustavo Guedes">
+                        </div>
+                    </div>
+                    <div class="presentation__profile-images__img-2">
+                        <img src="./images/github1.png" alt="Gust Github Avatar 1">
+                    </div>
+                    <div class="presentation__profile-images__img-3">
+                        <img src="./images/github2.png" alt="Gust Github Avatar 2">
                     </div>
                 </div>
-                <div class="presentation__profile-images__img-2">
-                    <img src="./images/github1.png" alt="Gust Github Avatar 1">
+            </div>
+
+            <div class="container" id="skills">
+                <h2>Habilidades & Certificações</h2>
+                <p class="skills__message">Possuo os conhecimentos a seguir</p>
+                <div class="skills__knowledge-container">
+                    <div class="skills__knowledge-container__section" id="front"></div>
+                    <div class="skills__knowledge-container__section" id="back"></div>
+                    <div class="skills__knowledge-container__section" id="database"></div>
+                    <div class="skills__knowledge-container__section" id="packages-and-libraries"></div>
+                    <div class="skills__knowledge-container__section" id="ide"></div>
+                    <div class="skills__knowledge-container__section" id="server-application"></div>
+                    <div class="skills__knowledge-container__section" id="shared-code"></div>
+                    <div class="skills__knowledge-container__section" id="softwares"></div>
+                    <div class="skills__knowledge-container__section" id="others"></div>
                 </div>
-                <div class="presentation__profile-images__img-3">
-                    <img src="./images/github2.png" alt="Gust Github Avatar 2">
+            </div>
+
+            <div class="container" id="animations">
+                <h2>Animações</h2>
+                <p class="animations__message">Animações feitas por mim</p>
+                <div class="animations__container">
+                    <div class="animations__container__image" id="animations-image"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="container" id="skills">
-            <h2>Habilidades & Certificações</h2>
-            <p class="skills__message">Possuo os conhecimentos a seguir</p>
-            <div class="skills__knowledge-container">
-                <div class="skills__knowledge-container__section" id="front"></div>
-                <div class="skills__knowledge-container__section" id="back"></div>
-                <div class="skills__knowledge-container__section" id="database"></div>
-                <div class="skills__knowledge-container__section" id="packages-and-libraries"></div>
-                <div class="skills__knowledge-container__section" id="ide"></div>
-                <div class="skills__knowledge-container__section" id="server-application"></div>
-                <div class="skills__knowledge-container__section" id="shared-code"></div>
-                <div class="skills__knowledge-container__section" id="softwares"></div>
-                <div class="skills__knowledge-container__section" id="others"></div>
+            <!-- <div class="container" id="games">
+                <h2>Games</h2>  
+                <p class="games__message">Gameplay de jogos que criei para estudar</p>
+                <div class="games__container">
+                    <div class="games__container__image" id="games-image"></div>
+                </div>
+            </div> -->
+
+            <div class="container" id="projects">
+                <h2>Projetos</h2>  
+                <p class="projects__message">Projetos de Estudo Pessoal</p>
+                <div class="projects__container">
+                    <div class="projects__container__image" id="projects-image"></div>
+                </div>
             </div>
-        </div>
 
-        <div class="container" id="animations">
-            <h2>Animações</h2>
-            <p class="animations__message">Animações feitas por mim</p>
-            <div class="animations__container">
-                <div class="animations__container__image" id="animations-image"></div>
-            </div>
-        </div>
-
-        <!-- <div class="container" id="games">
-            <h2>Games</h2>  
-            <p class="games__message">Gameplay de jogos que criei para estudar</p>
-            <div class="games__container">
-                <div class="games__container__image" id="games-image"></div>
-            </div>
-        </div> -->
-
-        <div class="container" id="projects">
-            <h2>Projetos</h2>  
-            <p class="projects__message">Projetos de Estudo Pessoal</p>
-            <div class="projects__container">
-                <div class="projects__container__image" id="projects-image"></div>
-            </div>
-        </div>
-
-        <div class="container" id="screenshots">
-            <h2>Screenshots</h2>      
-            <p class="screenshots__message">Modelos 3D feito por mim</p>
-            <div class="screenshots__container">
-                <div class="screenshots__container__image" id="screenshots-image"></div>
-                
-                <!-- Modal Enlarged - Without Loop -->
-                <div>
-                    <div id="myModalScreenshots" class="modal">
-                        
-                    <span class="close">&times;</span>
+            <div class="container" id="screenshots">
+                <h2>Screenshots</h2>      
+                <p class="screenshots__message">Modelos 3D feito por mim</p>
+                <div class="screenshots__container">
+                    <div class="screenshots__container__image" id="screenshots-image"></div>
                     
-                    <img class="modal-content" id="img-screenshot">
-                    <div id="caption"></div>
+                    <!-- Modal Enlarged - Without Loop -->
+                    <div>
+                        <div id="myModalScreenshots" class="modal">
+                            
+                        <span class="close">&times;</span>
+                        
+                        <img class="modal-content" id="img-screenshot">
+                        <div id="caption"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </main>
+        
         <script src="./js/menu.js"></script>
         <script src="./js/skills.js"></script>
         <script src="./js/screenshots.js"></script>
