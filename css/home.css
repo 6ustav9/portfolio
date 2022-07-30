@@ -13,7 +13,8 @@
     display: flex;
     position: absolute;
     top: 45%;
-    left: 25%;
+    left: 12%;
+    text-align: center;
 }
 
 .home__description p {
