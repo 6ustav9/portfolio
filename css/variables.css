@@ -3,12 +3,12 @@ name color create by color-name
 https://www.color-name.com/hex */
 
 :root {
-    --bluebonnet: #2A2BFF;
-    --university-of-california-gold: #B3802E;
-    --yellow-orange: #FFB236;
-    --limerick: #A7B30B;
-    --yellow-sun: #EFFF1C;
-    --gainsboro: #dedede;
-    --davys-grey: #585858;
-    --spanish-gray:#9a9a9a;
+    --skobeloff: #00747C;
+    --turquoise-surf: #00BBC9;
+    --chinese-silver: #CACACA;
+    --taupe-gray: #878787;
+    --raisin-black: #202022;
+    --white: #ffffff;
+    --black: #000000;
+
 }

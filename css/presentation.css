@@ -1,39 +1,42 @@
 #presentation {
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
-    padding: 4% 0;
+    align-items: center;
+    gap: 25px;
 }
 
 .presentation__description {
     display: flex;
     flex-flow: column;
     align-self: center;
-    margin: 0 20px;
     width: 50%;
 }
 
 .presentation__description p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.45rem;
     word-spacing: 12px;
     letter-spacing: .05rem;
-    line-height: 1.38rem;
+    line-height: 1.95rem;
     margin: 8px 0;
 }
 
+strong {
+    font-weight: 900;
+    color: var(--chinese-silver);
+}
+
 .presentation__external-links {
-    color: var(--yellow-sun);
+    color: var(--white);
     transition: all 1s ease-in-out;
 }
 
 .presentation__external-links:hover {
-    color: var(--yellow-orange);
+    color: var(--taupe-gray);
     transition: all 1s ease-in-out;
 }
 
-.presentation__profile-images {
-    margin-top: 5%;
-    margin-left: 2%;
-}
 
 .presentation__profile-images__img-1 img {
     width: 150px;
@@ -44,11 +47,10 @@
 }
 
 .presentation__profile-images__img-1__screen {
-    border: .32rem var(--spanish-gray) solid;
+    border: .32rem var(--taupe-gray) solid;
     border-radius: 5rem;
-    width: 135px;
-    height: 135px;
-    margin-bottom: 70px;
+    width: 133px;
+    height: 133px;
     z-index: 0;
 }
 
@@ -58,20 +60,21 @@
     -webkit-mask-position: center -30px;
     mask-position: 50px center;
     position: relative;
-    top: -7px;
+    top: -8px;
+    left: -1px;
 }
 
 .presentation__profile-images__img-2 img {
     width: 100px;
     flex-flow: row;
-    border: .3rem var(--spanish-gray) solid;
+    border: .3rem var(--taupe-gray) solid;
 }
 
 .presentation__profile-images__img-3 img {
-    width: 108px;
+    width: 110px;
     flex-flow: row;
-    background: var(--bluebonnet);
-    border: .3rem var(--spanish-gray) solid;
+    background: var(--chinese-silver);
+    border: .3rem var(--taupe-gray) solid;
 }
 
 .presentation__profile-images div img:only-child {
@@ -80,14 +83,12 @@
 
 .presentation__profile-images__img-1 {
     position: relative;
-    left: 20%;
-    top: -2%;
+    left: 35%;
 }
 
 .presentation__profile-images__img-2 {
     position: relative;
-    left: -15%;
-    top: -13%
+    left: -12%;
 }
 
 .presentation__profile-images__img-3 {

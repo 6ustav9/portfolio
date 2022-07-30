@@ -3,32 +3,35 @@
     position: fixed;
     justify-content: center;
     width: 100%;
-    background: var(--university-of-california-gold);
-    border-bottom: .1rem var(--davys-grey) solid;
     z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+.menu-sroll {
+    background-color: var(--skobeloff);
+    box-shadow: var(--taupe-gray) 0px 2px 25px 0px;
+    transition: all .5s ease-in-out;
 }
 
 .menu__list {
     display: flex;
     list-style: none;
-    margin: 5px;
-    padding: 5px 10px;
+    margin: 20px;
+    gap: 20px;
 }
 
 .menu__list__item {
     display: flex;
-    margin: 0 15px;
 }
 
 .menu__list__item__link {
     display: flex;
-    margin: 5px;
     text-decoration: none;
     font-family: 'Euphoria Script', cursive;
     font-size: 2rem;
-    color: var(--gainsboro);
+    color: var(--chinese-silver);
 }
 
 .active {
-    color: var(--davys-grey);
+    color: var(--taupe-gray);
 }

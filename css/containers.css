@@ -3,9 +3,9 @@
 }
 
 .container:nth-child(even) {
-    background: var(--university-of-california-gold);
+    background: var(--skobeloff);
 }
 
 .container:nth-child(odd) {
-    background: var(--yellow-orange);
+    background: var(--turquoise-surf);
 }

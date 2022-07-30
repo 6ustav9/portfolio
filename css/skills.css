@@ -13,7 +13,7 @@
 }
 
 .skills__knowledge-container__section {
-    background: var(--spanish-gray);
+    background: var(--chinese-silver);
     border-radius: 1rem;
     margin: 3% 1%;
     padding: 2% 3%;
@@ -36,9 +36,15 @@
     margin-top: 1.5rem;
 }
 
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .skills__list__item {
     display: flex;
-    margin: .4rem 0;
+    gap: 5px;
     letter-spacing: .05rem;
     align-items: center;
 }
