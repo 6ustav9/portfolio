@@ -27,7 +27,9 @@
 
 .home__external-links {
     color: var(--white);
+    transition: all .3s ease-in-out;
 }
 .home__external-links:hover {
     color: var(--taupe-gray);
+    transition: all .3s ease-in-out;
 }
