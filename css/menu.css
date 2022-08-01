@@ -1,8 +1,6 @@
 .menu {
-    display: flex;
     position: fixed;
     justify-content: center;
-    width: 100%;
     z-index: 1;
     transition: all .5s ease-in-out;
 }

@@ -1,5 +1,15 @@
+html {
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
+    width: 100vw;
+}
+
+.container-transparent {
+    display: flex;
+    width: 100vw;
 }
 
 .container:nth-child(even) {
