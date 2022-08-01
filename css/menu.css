@@ -7,6 +7,10 @@
     transition: all .5s ease-in-out;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .menu-sroll {
     background-color: var(--skobeloff);
     box-shadow: var(--taupe-gray) 0px 2px 25px 0px;
