@@ -1,7 +1,7 @@
 #projects {
 	flex-flow: column;
     align-items: center;
-    padding: 5%;
+    padding: 8% 0;
 }
 
 .projects__container {

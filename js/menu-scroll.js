@@ -12,15 +12,15 @@ document.addEventListener('scroll' , (event) => {
         && Math.round(window.pageYOffset) < (document.getElementById("presentation").offsetTop + document.getElementById("presentation").offsetHeight)) {
             scrollActiveMenu(1); 
     } else if(Math.round(window.pageYOffset) >= document.getElementById("skills").offsetTop
-        && Math.round(window.pageYOffset) < (document.getElementById("skills").offsetTop + document.getElementById("skills").offsetHeight)) {
+        && Math.round(window.pageYOffset) < (document.getElementById("skills").offsetTop + (document.getElementById("skills").offsetHeight - 10))) {
             scrollActiveMenu(2); 
-    } else if(Math.round(window.pageYOffset) >= document.getElementById("animations").offsetTop
-        && Math.round(window.pageYOffset) < (document.getElementById("animations").offsetTop + document.getElementById("animations").offsetHeight)) {
+    } else if(Math.round(window.pageYOffset) >= (document.getElementById("animations").offsetTop - 10)
+        && Math.round(window.pageYOffset) < (document.getElementById("animations").offsetTop + (document.getElementById("animations").offsetHeight - 10))) {
             scrollActiveMenu(3); 
-    } else if(Math.round(window.pageYOffset) >= document.getElementById("projects").offsetTop
-        && Math.round(window.pageYOffset) < (document.getElementById("projects").offsetTop + document.getElementById("projects").offsetHeight)) {
+    } else if(Math.round(window.pageYOffset) >= (document.getElementById("projects").offsetTop - 10)
+        && Math.round(window.pageYOffset) < (document.getElementById("projects").offsetTop + (document.getElementById("projects").offsetHeight - 10))) {
             scrollActiveMenu(4); 
-        } else if(Math.round(window.pageYOffset) >= document.getElementById("screenshots").offsetTop
+        } else if(Math.round(window.pageYOffset) >= (document.getElementById("screenshots").offsetTop - 10)
             && Math.round(window.pageYOffset) < (document.getElementById("screenshots").offsetTop + document.getElementById("screenshots").offsetHeight)) {
             scrollActiveMenu(5); 
     } else {

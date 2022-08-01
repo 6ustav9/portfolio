@@ -1,7 +1,8 @@
 #skills {
     flex-flow: column;
     align-items: center;
-    padding: 5%;
+    gap: 20px;
+    padding: 8% 0;
 }
 
 .skills__knowledge-container {
