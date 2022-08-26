@@ -23,16 +23,16 @@
 
 strong {
     font-weight: 900;
-    color: var(--chinese-silver);
+    color: var(--skobeloff);
 }
 
 .presentation__external-links {
-    color: var(--white);
+    color: var(--skobeloff);
     transition: all 1s ease-in-out;
 }
 
 .presentation__external-links:hover {
-    color: var(--taupe-gray);
+    color: var(--turquoise-surf);
     transition: all 1s ease-in-out;
 }
 

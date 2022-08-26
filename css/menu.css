@@ -10,8 +10,8 @@ html {
 }
 
 .menu-sroll {
-    background-color: var(--skobeloff);
-    box-shadow: var(--taupe-gray) 0px 2px 25px 0px;
+    background-color: var(--taupe-gray);
+    box-shadow: var(--chinese-silver) 0px 2px 25px 0px;
     transition: all .5s ease-in-out;
 }
 
@@ -31,15 +31,16 @@ html {
     text-decoration: none;
     font-family: 'Euphoria Script', cursive;
     font-size: 2rem;
+    font-weight: 500;
     color: var(--chinese-silver);
     transition: all .3s ease-in-out;
 }
 
 .menu__list__item__link:hover {
-    color: var(--taupe-gray);
+    color: var(--skobeloff);
     transition: all .3s ease-in-out;
 }
 
 .active {
-    color: var(--taupe-gray);
+    color: var(--skobeloff);
 }
