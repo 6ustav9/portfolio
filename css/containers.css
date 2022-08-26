@@ -13,9 +13,9 @@ html {
 }
 
 .container:nth-child(even) {
-    background: var(--skobeloff);
+    background: var(--chinese-silver);
 }
 
 .container:nth-child(odd) {
-    background: var(--turquoise-surf);
+    background: var(--gainsboro);
 }
