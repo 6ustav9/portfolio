@@ -10,17 +10,7 @@ let listProjects = [
         link: "https://recipesandcocktail.wordpress.com",
         name: "Recipes And Cocktails",
         githubProject: "N/A"
-    },
-    {
-        link: "https://moviesdbzn.herokuapp.com",
-        name: "Movies DBZN",
-        githubProject: "https://github.com/6ust/heroku-movies-dbzn-react-version"
     }
-    // ,{
-    //     link: "",
-    //     name: "Silent Hill Fans",
-    //     githubProject: ""
-    // }     
 ];
 
 

@@ -13,7 +13,15 @@
     gap: 50px;
 }
 
-.skills__knowledge-container__section {
+#skills__knowledge-container__section--web-tecnologies,
+#skills__knowledge-container__section--front,
+#skills__knowledge-container__section--back,
+#skills__knowledge-container__section--database,
+#skills__knowledge-container__section--methodology,
+#skills__knowledge-container__section--ide,
+#skills__knowledge-container__section--server-application,
+#skills__knowledge-container__section--shared-code,
+#skills__knowledge-container__section--others {
     background: var(--chinese-silver);
     border-radius: 1rem;
     padding: 2% 3%;

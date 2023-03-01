@@ -44,3 +44,10 @@ html {
 .active {
     color: var(--skobeloff);
 }
+
+
+@media screen and (min-width: 319px) {
+    .menu {
+        width: 100vw;
+    }
+}
