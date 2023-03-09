@@ -23,6 +23,7 @@
 #skills__knowledge-container__section--shared-code,
 #skills__knowledge-container__section--others {
     background: var(--chinese-silver);
+    font-family: 'Montserrat', sans-serif;
     border-radius: 1rem;
     padding: 2% 3%;
     width: 210px;
@@ -51,7 +52,7 @@
 
 .skills__list__item {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     letter-spacing: .05rem;
     align-items: center;
 }
