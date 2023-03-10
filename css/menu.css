@@ -32,7 +32,7 @@ html {
     display: flex;
     text-decoration: none;
     font-family: 'Euphoria Script', cursive;
-    font-size: calc(var(--paragraphs-default) + 0.65rem);
+    font-size: calc(var(--general-text-default) + .65rem);
     font-weight: 500;
     color: var(--chinese-silver);
     transition: all .3s ease-in-out;

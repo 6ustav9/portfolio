@@ -39,7 +39,7 @@
 
     /* TEXTS OF PAGES */
     .presentation__description p {
-        font-size: calc(var(--paragraphs-default) - 0.15rem);
+        font-size: calc(var(--general-text-default) - 0.15rem);
         word-spacing: 5px;
     }
 }
@@ -97,12 +97,16 @@
 
     /* FONT MENU */
     .menu__list__item__link {
-        font-size: calc(var(--paragraphs-default) + 0.15rem);
+        font-size: calc(var(--general-text-default) + 0.15rem);
     }
 
     /* ADJUST SECTIONS */
     .home__description {
         top: 30%;
+    }
+
+    .skills__message {
+        text-align: center;
     }
 
     .skills__message,

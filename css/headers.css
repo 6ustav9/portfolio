@@ -1,5 +1,7 @@
-h1,
-h2 {
-    font-size: 3rem;
+@import url('./variables.css');
+
+.container .presentation__description > h1,
+.container > h2 {
+    font-size: calc(var(--general-text-default) + 1.65rem);
     font-family: 'Euphoria Script', cursive;
 }

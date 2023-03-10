@@ -19,7 +19,7 @@
 
 .home__description p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: calc(var(--general-text-default) + 2.05rem);
     color: var(--white);
     line-height: 60px;
     width: 90%;

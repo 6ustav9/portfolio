@@ -5,7 +5,7 @@
 
 .footer p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
+    font-size: calc(var(--general-text-default) - .15rem);
     margin: 15px 0;
     color: var(--white);
 }

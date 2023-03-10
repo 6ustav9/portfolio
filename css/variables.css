@@ -11,6 +11,12 @@ https://www.color-name.com/hex */
     --raisin-black: #202022;
     --white: #ffffff;
     --black: #000000;
+    --card-color: #bababa;
+
+    --success-color: #2ECC71;
+    --info-color: #3498DB;
+    --alert-color: #F1C40F;
+    --suggestion-color: #FFA07A;
 
     /* Tamanho de Photos Presentation */
     --size-img1: 245px;
@@ -23,7 +29,7 @@ https://www.color-name.com/hex */
     --size-img2-mob-landscape: 140px;
     --size-img3-mob-landscape: 140px;
 
-    --paragraphs-default: 1.35rem; 
+    --general-text-default: 1.35rem; 
 
-    
+    --text-projects: Shadows Into Light,cursive;
 }

@@ -3,13 +3,24 @@ let containerProjects = document.getElementById('projects-image');
 let listProjects = [
     {
         link: "https://lyrics-redirect.vercel.app",
-        name: "Lyrics Redirect",
+        name: "Lyrics Redirect Version 2",
+        technologies: "Angular 14 com SASS, consumindo Json Server - Disponibilizado por Vercel",
+        userGit: "6ustav9",
         githubProject: "https://github.com/6ustav9/lyrics-redirect"
+    },
+    {
+        link: "https://lyrics-redirect-ajs.netlify.app",
+        name: "Lyrics Redirect Version 1",
+        technologies: "Angular JS com CSS3 - Disponibilizado por Netlify",
+        userGit: "6ust",
+        githubProject: "https://github.com/6ust/lyrics-redirect"
     },
     {
         link: "https://recipesandcocktail.wordpress.com",
         name: "Recipes And Cocktails",
-        githubProject: "N/A"
+        technologies: "Wordpress, HTML e CSS",
+        userGit: "_N/A_",
+        githubProject: "link N/A"
     }
 ];
 
@@ -21,6 +32,8 @@ for (let idxListProjects = 0; idxListProjects < listProjects.length; idxListProj
     let linkSiteElement = document.createElement('a');
     let linkGithubProjectElement = document.createElement('a');
     let titleSiteElement = document.createElement('h2');
+    let userGitElement = document.createElement('h2');
+    let technologiesElement = document.createElement('h2');
     let titleGithubProjectElement = document.createElement('h2');
     let imgProjectsItemlistElement = document.createElement('iframe');
     let txtTitleSite = document.createTextNode(listProjects[idxListProjects].name);
@@ -36,15 +49,21 @@ for (let idxListProjects = 0; idxListProjects < listProjects.length; idxListProj
     linkGithubProjectElement.setAttribute("href", listProjects[idxListProjects].githubProject);
     linkGithubProjectElement.setAttribute("target", "_blank");
 
+    // Users and Technologies
+    userGitElement.innerHTML = listProjects[idxListProjects].userGit;
+    technologiesElement.innerHTML = listProjects[idxListProjects].technologies;
+
+    userGitElement.classList.add("projects__container__image__item--usergit");
+    technologiesElement.classList.add("projects__container__image__item--tecnnologies");
 
 	divElement.classList.add("projects__container__image__item")
     imgProjectsItemlistElement.classList.add("projects__container__image__item__iframe");
     // Classes Site
-    titleSiteElement.classList.add('projects__container__image__item__link-site__title');
-    linkSiteElement.classList.add('projects__container__image__item__link-site');
+    linkSiteElement.classList.add('projects__container__image__item__link__site');
+    titleSiteElement.classList.add('projects__container__image__item__link__site--title');
     // Classes Github Project
-    titleGithubProjectElement.classList.add('projects__container__image__item__link-github-project__title');
-    linkGithubProjectElement.classList.add('projects__container__image__item__link-github-project');
+    linkGithubProjectElement.classList.add('projects__container__image__item__link__github-project');
+    titleGithubProjectElement.classList.add('projects__container__image__item__link__github-project--title');
 
 
     titleSiteElement.appendChild(imgProjectsItemlistElement);
@@ -57,6 +76,8 @@ for (let idxListProjects = 0; idxListProjects < listProjects.length; idxListProj
     
     divElement.appendChild(imgProjectsItemlistElement);
     divElement.appendChild(linkSiteElement);
+    divElement.appendChild(technologiesElement);
+    divElement.appendChild(userGitElement);
     divElement.appendChild(linkGithubProjectElement);
 
 	containerProjects.appendChild(divElement);

@@ -18,7 +18,7 @@
 .presentation__description p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
-    font-size: var(--paragraphs-default);
+    font-size: var(--general-text-default);
     word-spacing: 12px;
     letter-spacing: .05rem;
     line-height: 1.95rem;
