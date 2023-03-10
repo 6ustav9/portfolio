@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 #skills {
     flex-flow: column;
     align-items: center;
@@ -40,7 +42,7 @@
 
 .skills__message {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3rem;
+    font-size: var(--paragraphs-default);
     margin-top: 1.5rem;
 }
 

@@ -12,4 +12,18 @@ https://www.color-name.com/hex */
     --white: #ffffff;
     --black: #000000;
 
+    /* Tamanho de Photos Presentation */
+    --size-img1: 245px;
+    --size-img2: 220px;
+    --size-img3: 220px;
+    --border-radius-img1: 150px;
+    --border-radius-img2n3: 120px;
+
+    --size-img1-mob-landscape: 180px;
+    --size-img2-mob-landscape: 140px;
+    --size-img3-mob-landscape: 140px;
+
+    --paragraphs-default: 1.35rem; 
+
+    
 }

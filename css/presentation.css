@@ -1,13 +1,8 @@
-:root {
-    --size-img1: 245px;
-    --size-img2: 220px;
-    --size-img3: 220px;
-    --border-radius-img1: 150px;
-    --border-radius-img2n3: 120px;
-}
+@import url("./variables.css");
 
 #presentation {
-    height: 250vh;
+    padding: 50px 0;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -23,7 +18,7 @@
 .presentation__description p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
-    font-size: 1.35rem;
+    font-size: var(--paragraphs-default);
     word-spacing: 12px;
     letter-spacing: .05rem;
     line-height: 1.95rem;
@@ -66,7 +61,7 @@ strong {
     height: var(--size-img1);
     z-index: 0;
     width: 92%;
-    height: 235px;
+    height: calc(var(--size-img1) - 10px);
 }
 
 .presentation__profile-images__img-1--cut {
@@ -113,9 +108,3 @@ strong {
     left: 65%;
     top: -23%;
 }
-/* 
-@media screen and (min-width: 319px) {
-    #presentation {
-        width: 100vw;
-    }
-} */

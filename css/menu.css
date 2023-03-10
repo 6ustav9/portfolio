@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 .menu {
     position: fixed;
     justify-content: center;
@@ -30,7 +32,7 @@ html {
     display: flex;
     text-decoration: none;
     font-family: 'Euphoria Script', cursive;
-    font-size: 2rem;
+    font-size: calc(var(--paragraphs-default) + 0.65rem);
     font-weight: 500;
     color: var(--chinese-silver);
     transition: all .3s ease-in-out;
@@ -45,9 +47,3 @@ html {
     color: var(--skobeloff);
 }
 
-
-@media screen and (min-width: 319px) {
-    .menu {
-        width: 100vw;
-    }
-}

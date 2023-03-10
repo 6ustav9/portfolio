@@ -2,12 +2,13 @@ html {
     overflow-x: hidden;
 }
 
-.container {
+.container-transparent {
     display: flex;
     width: 100vw;
 }
 
-.container-transparent {
+.container:nth-child(even),
+.container:nth-child(odd) {
     display: flex;
     width: 100vw;
 }
