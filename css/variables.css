@@ -18,6 +18,11 @@ https://www.color-name.com/hex */
     --alert-color: #F1C40F;
     --suggestion-color: #FFA07A;
 
+    --legend-first: #005792;
+    --legend-second: #684D63;
+    --legend-trird: #C87D35;
+    --legend-fourth: #7E8D85;
+
     /* Tamanho de Photos Presentation */
     --size-img1: 245px;
     --size-img2: 220px;
@@ -32,4 +37,5 @@ https://www.color-name.com/hex */
     --general-text-default: 1.35rem; 
 
     --text-projects: Shadows Into Light,cursive;
+    --text-cards: 0.85rem;
 }

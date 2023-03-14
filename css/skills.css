@@ -47,6 +47,20 @@
     margin-top: 1.5rem;
 }
 
+.skills__legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 50px;
+    gap: 35px;
+}
+
+.skills__legend li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .skills__list {
     display: flex;
     flex-direction: column;
@@ -57,9 +71,93 @@
     display: flex;
     gap: 10px;
     letter-spacing: .05rem;
+    padding: 3px 2px 3px 0;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--card-color);
+    border-radius: 15px;
+}
+
+.skills__list__item--details {
+    display: flex;
+    font-size: var(--text-cards);
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.skills__list__item--details p {
+    width: 140px;
+}
+
+.skills__list__item--details-info {
+    background-color: var(--card-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: calc(var(--general-text-default) - .45rem);
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    clear: left;
 }
 
 .skills__list__item__img {
     height: 25px;
+}
+
+.circle__first, 
+.circle__second, 
+.circle__third, 
+.circle__fourth {
+    width: 6px;
+    height: 6px;
+    border-radius: 520px;
+}
+
+.circle__first {
+    background: var(--legend-first);
+    box-shadow: 
+        0 0 5px var(--legend-first), 
+        0 0 10px var(--legend-first), 
+        0 0 15px var(--legend-first), 
+        0 0 5px var(--legend-first), 
+        0 0 10px var(--legend-first), 
+        0 0 15px var(--legend-first),
+        0 0 1px var(--legend-first);
+}
+
+.circle__second {
+    background: var(--legend-second);
+    box-shadow: 
+        0 0 5px var(--legend-second), 
+        0 0 10px var(--legend-second), 
+        0 0 15px var(--legend-second), 
+        0 0 5px var(--legend-second), 
+        0 0 10px var(--legend-second), 
+        0 0 15px var(--legend-second),
+        0 0 1px var(--legend-second);
+}
+
+.circle__third {
+    background: var(--legend-trird);
+    box-shadow: 
+        0 0 5px var(--legend-trird), 
+        0 0 10px var(--legend-trird), 
+        0 0 15px var(--legend-trird), 
+        0 0 5px var(--legend-trird), 
+        0 0 10px var(--legend-trird), 
+        0 0 15px var(--legend-trird),
+        0 0 1px var(--legend-trird);
+}
+
+.circle__fourth {
+    background: var(--legend-fourth);
+    box-shadow: 
+        0 0 5px var(--legend-fourth), 
+        0 0 10px var(--legend-fourth), 
+        0 0 15px var(--legend-fourth), 
+        0 0 5px var(--legend-fourth), 
+        0 0 10px var(--legend-fourth), 
+        0 0 15px var(--legend-fourth),
+        0 0 1px var(--legend-fourth);
 }
