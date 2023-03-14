@@ -1,12 +1,14 @@
-let listContainerNames = ["skills__knowledge-container__section--front",
-                        "skills__knowledge-container__section--back",
-                        "skills__knowledge-container__section--database",
-                        "skills__knowledge-container__section--methodology",
-                        "skills__knowledge-container__section--ide",
-                        "skills__knowledge-container__section--server-application",
-                        "skills__knowledge-container__section--shared-code",
-                        "skills__knowledge-container__section--web-tecnologies",
-                        "skills__knowledge-container__section--others"];
+let listContainerNames = [
+                        {container: "skills__knowledge-container__section--front", nameInApp: "front"},
+                        {container: "skills__knowledge-container__section--back", nameInApp: "back"},
+                        {container: "skills__knowledge-container__section--database", nameInApp: "banco de dados"},
+                        {container: "skills__knowledge-container__section--methodology", nameInApp: "metodologias"},
+                        {container: "skills__knowledge-container__section--ide", nameInApp: "IDE"},
+                        {container: "skills__knowledge-container__section--server-application", nameInApp: "servidores de aplicação"},
+                        {container: "skills__knowledge-container__section--shared-code", nameInApp: "versionamento de código"},
+                        {container: "skills__knowledge-container__section--web-tecnologies", nameInApp: "tecnologias web"},
+                        {container: "skills__knowledge-container__section--others", nameInApp: "outros"},
+                    ];
 
 let frontList = [
     { markingColor: "first", logoImg: "./images/icons/ajax.png", name: "Ajax", descriptionKnowledge: "Tenho Experiência Profissional, esta biblioteca foi utilizada em diversas aplicações dos clientes que trabalhei, e já houveram incidentes que tiveram correção/ implementações realizadas por Ajax... O ajax teve uma implementação que precisou ser realizada em uma aplicação para voltar para uma seção anterior, visto que havia 3 seções em uma aplicação tela inicial o cliente estava voltando da 3 para a 1, sendo que deveria ser para a 2, esta correção foi realizada via AJAX" },
@@ -83,7 +85,7 @@ let webTecnologiesList = [
     { markingColor: "second", logoImg: "./images/icons/spa.png", name: "Single Page Application", descriptionKnowledge: "Tenho conhecimento de Single Page Application(SPA), embora eu não tenha tido a oportunidade de utilizar esta arquitetura em ambiente profissional, possuo este portfolio que é construído usando SPA"},
     { markingColor: "second", logoImg: "./images/icons/responsive.png", name: "Responsividade", descriptionKnowledge: "Tenho conhecimento de Responsividade, uma técnica fundamental de desenvolvimento web que permite que um site ou aplicativo se adapte a diferentes tamanhos de tela, tornando-o mais amigável para dispositivos móveis. Embora não tenha tido a oportunidade de aplicá-la em ambiente profissional, utilizei essa técnica em diversos projetos pessoais, incluindo este portfolio."},
     { markingColor: "fourth", logoImg: "./images/icons/sass.png", name: "SCSS", descriptionKnowledge: "Tenho conhecimento do pre processador de CSS o SCSS. Embora nunca o tenha utilizado em ambiente profissional, conheço o processo de desenvolvimento dele. O SCSS é baseado em Sass, que é uma extensão do CSS que permite a utilização de recursos como variáveis, mixins e funções para facilitar o desenvolvimento de estilos. O código SCSS é mais parecido com o CSS convencional e utiliza colchetes, diferentemente do Sass, que é baseado em identação."},
-    { markingColor: "fourth", logoImg: "./images/icons/bootstrap.png", name: "Bootstrap", descriptionKnowledge: "Teste de Texto" },
+    { markingColor: "fourth", logoImg: "./images/icons/bootstrap.png", name: "Bootstrap", descriptionKnowledge: "Tenho conhecimento deste Framework baseado em CSS, ainda não tive oportunindade utiliza-lo em ambiente profissional." },
 ]
 // TODOS OS ACIMA JA FORAM ATUALIZADOS E REVISADOS
 
@@ -92,17 +94,18 @@ let webTecnologiesList = [
 for(let idxListContainerNames = 0; idxListContainerNames < listContainerNames.length; idxListContainerNames++) {
 
     // CRIAÇÃO/MAPEAMENTO DO CONTAINER (QUADRO)    
-    let container = document.getElementById(listContainerNames[idxListContainerNames]);
+    let container = document.getElementById(listContainerNames[idxListContainerNames].container);
 
+    console.log(listContainerNames[idxListContainerNames].container.split("--")[1].replaceAll("-", " "));
     // CRIAÇÃO DE TITULO DO QUADRO
     let titleSection = document.createElement('h2');
-    let txtTitle = document.createTextNode(listContainerNames[idxListContainerNames].split("--")[1]);
+    let txtTitle = document.createTextNode(capitalizeWords(listContainerNames[idxListContainerNames].nameInApp.replaceAll("-", " ")));
 
     titleSection.classList.add('skills__title');
     titleSection.appendChild(txtTitle);
     container.appendChild(titleSection);
 
-    switch(listContainerNames[idxListContainerNames]) {
+    switch(listContainerNames[idxListContainerNames].container) {
         case "skills__knowledge-container__section--front":
             listItemsCycle(container, frontList);
             break;
@@ -212,3 +215,13 @@ function listItemsCycle(container, listItems) {
     }
 }
 // FUNÇÃO PARA VARRER A LISTA DE ITENS - FIM
+
+// FUNÇÃO PARA TRANSFORMAR A PRIMEIRA LETRA DE UMA PALAVRA APÓS O ESPAÇO EM MAIUSCULA - INICIO
+function capitalizeWords(str) {
+    return str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+  // FUNÇÃO PARA TRANSFORMAR A PRIMEIRA LETRA DE UMA PALAVRA APÓS O ESPAÇO EM MAIUSCULA - FIM
+  
