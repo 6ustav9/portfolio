@@ -52,6 +52,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px 50px;
+    padding: 20px 15px;
+    border-radius: 1rem;
+    background-color: var(--card-color);
     gap: 35px;
 }
 
@@ -59,6 +62,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.skills__legend li p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(var(--general-text-default) - .55rem);
 }
 
 .skills__list {
