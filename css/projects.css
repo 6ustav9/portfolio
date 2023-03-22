@@ -60,10 +60,12 @@
     letter-spacing: .12rem;
     text-align: center;
     color: var(--black);
+    transition: all .4s ease-in-out;
 }
 
 .projects__container__image__item__link__site--title:hover {
     color: var(--info-color);
+    transition: all .4s ease-in-out;
 }
 
 .projects__container__image__item__link__github-project {
@@ -76,13 +78,15 @@
     text-align: center;
     color: var(--black);
     letter-spacing: .13rem;
+    transition: color .4s ease-in-out;
 }
 
 .projects__container__image__item__link__github-project--title:hover {
     color: var(--info-color);
+    transition: color .4s ease-in-out;
 }
 
-.projects__container__image__item--tecnnologies {
+.projects__container__image__item--tecnologies {
     font-family: var(--text-projects);
     font-size: calc(var(--general-text-default) - 0.05rem);
     letter-spacing: .13rem;
@@ -95,4 +99,39 @@
     font-weight: 600;
     letter-spacing: .13rem;
     text-align: center;
+}
+
+/* ------------------------- */
+/* - Animations Card  - PC - */
+/* ------------------------- */
+.projects__container__image__item__iframe {
+    z-index: 1;
+}
+
+.projects__container__image__item :only-child,
+.projects__container__image__item h2  {
+    position: relative;
+    top: -220px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in, top .8s ease-in;
+}
+
+.projects__container__image__item:hover :only-child,
+.projects__container__image__item:hover h2  {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: opacity 1.5s ease-in, top .8s ease-in;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .projects__container__image__item :only-child,
+    .projects__container__image__item h2  {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+        transition: opacity 1.5s ease-in, top .8s ease-in;
+    }
 }

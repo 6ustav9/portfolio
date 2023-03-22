@@ -54,7 +54,7 @@ for (let idxListProjects = 0; idxListProjects < listProjects.length; idxListProj
     technologiesElement.innerHTML = listProjects[idxListProjects].technologies;
 
     userGitElement.classList.add("projects__container__image__item--usergit");
-    technologiesElement.classList.add("projects__container__image__item--tecnnologies");
+    technologiesElement.classList.add("projects__container__image__item--tecnologies");
 
 	divElement.classList.add("projects__container__image__item")
     imgProjectsItemlistElement.classList.add("projects__container__image__item__iframe");
